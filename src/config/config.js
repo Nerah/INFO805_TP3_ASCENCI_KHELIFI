@@ -1,9 +1,36 @@
+import React from "react";
+import {
+    Home,
+    Boxes,
+    WebGL,
+    Error404
+} from "../scenes"
+
 const configuration = {
-    routes: {
-        home: "/",
-        boxes: "/boxes",
-        error404: "*",
+    scenes: [
+        {
+            route: "/boxes",
+            titre: "Boxes",
+            component: <Boxes/>
+        },
+        {
+            route: "/webgl",
+            titre: "WebGL",
+            component: <WebGL/>
+        },
+    ],
+    pages: {
+        home: {
+            route: "/",
+            titre: "Home",
+            component: <Home/>
+        },
+        error404: {
+            route: "*",
+            titre: "Error 404",
+            component: <Error404/>
+        }
     }
 };
 
-module.exports = configuration;
+export default configuration;

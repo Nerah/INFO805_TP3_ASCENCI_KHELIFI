@@ -4,25 +4,24 @@ import {
     Switch,
     Route
 } from "react-router-dom";
-import {
-    Home,
-    Error404,
-} from "../scenes";
-import * as config from "../config";
-import Boxes from "../scenes/boxes/Boxes";
+import configuration from "../config";
+
+const listeScenes = configuration.scenes.map((item) => (
+    <Route exact path={item.route}>
+        {item.component}
+    </Route>
+));
 
 function Routes() {
     return (
         <Router>
             <Switch>
-                <Route exact path={config.routes.home}>
-                    <Home/>
+                <Route exact path={configuration.pages.home.route}>
+                    {configuration.pages.home.component}
                 </Route>
-                <Route exact path={config.routes.boxes}>
-                    <Boxes/>
-                </Route>
-                <Route path={config.routes.error404}>
-                    <Error404/>
+                {listeScenes}
+                <Route path={configuration.pages.error404.route}>
+                    {configuration.pages.error404.component}
                 </Route>
             </Switch>
         </Router>
