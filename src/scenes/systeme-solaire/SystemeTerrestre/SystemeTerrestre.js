@@ -1,15 +1,14 @@
-import React, {Component} from "react";
+import React from "react";
 import {
     PlaneteTerre
 } from "../../../scene-components";
 import SystemeLunaire from "../SystemeLunaire/SystemeLunaire";
 
 function SystemeTerrestre(props) {
-    // TODO SystemeLunaire
     return (
         <group position={props.position}>
-            <PlaneteTerre position={[0, 0, 0]}/>
-            <SystemeLunaire position={[-2, 0, 0]}/>
+            <PlaneteTerre angle={props.angle} position={[0, 0, 0]}/>
+            <SystemeLunaire angle={props.angle} position={[-2, 0, 0]}/>
         </group>
     );
 }

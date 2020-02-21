@@ -6,7 +6,7 @@ import {
 function SystemeLunaire(props) {
     return (
         <group position={props.position}>
-            <PlaneteLune position={[0, 0, 0]}/>
+            <PlaneteLune angle={props.angle} position={[0, 0, 0]}/>
         </group>
     );
 }

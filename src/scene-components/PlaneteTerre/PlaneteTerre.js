@@ -9,6 +9,7 @@ function PlaneteTerre(props) {
             material={utils.files.loadPhongMaterial("/pictures/earth_atmos_2048.jpg")}
             radius={1}
             precision={15}
+            rotation={props.angle}
         />
     )
 }

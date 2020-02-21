@@ -5,10 +5,11 @@ import utils from "../../utils";
 function PlaneteSoleil(props) {
     return (
         <GlobeSystemeSolaire
-            {...props}
+            position={props.position}
             material={utils.files.loadBasicMaterial("/pictures/sun.jpg")}
             radius={1}
             precision={30}
+            rotation={props.angle / 26}
         />
     )
 }

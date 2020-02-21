@@ -11,11 +11,11 @@ function GlobeSystemeSolaire(props) {
     let geometry = new SphereGeometry(props.radius, props.precision, props.precision);
 
     // Rotate mesh every frame, this is outside of React without overhead
-    useFrame(() => (mesh.current.rotation.x = mesh.current.rotation.y += 0.01));
+    useFrame(() => (mesh.current.rotation.x = mesh.current.rotation.y += props.rotation));
 
     return (
         <mesh
-            {...props}
+            position={props.position}
             ref={mesh}
             geometry={geometry}
             material={material}
