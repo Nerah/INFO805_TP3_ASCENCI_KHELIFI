@@ -6,7 +6,7 @@ function PlaneteLune(props) {
     return (
         <GlobeSystemeSolaire
             {...props}
-            material={utils.files.loadMaterial("/pictures/moon_1024.jpg")}
+            material={utils.files.loadPhongMaterial("/pictures/moon_1024.jpg")}
             radius={0.15}
             precision={10}
         />

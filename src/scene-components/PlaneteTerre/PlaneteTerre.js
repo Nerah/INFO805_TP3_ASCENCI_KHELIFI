@@ -6,7 +6,7 @@ function PlaneteTerre(props) {
     return (
         <GlobeSystemeSolaire
             {...props}
-            material={utils.files.loadMaterial("/pictures/earth_atmos_2048.jpg")}
+            material={utils.files.loadPhongMaterial("/pictures/earth_atmos_2048.jpg")}
             radius={1}
             precision={15}
         />

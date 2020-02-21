@@ -1,7 +1,6 @@
 import React, {useRef} from 'react'
 import {useFrame} from 'react-three-fiber'
 import {SphereGeometry} from "three";
-import utils from "../utils";
 
 function GlobeSystemeSolaire(props) {
     // This reference will give us direct access to the mesh

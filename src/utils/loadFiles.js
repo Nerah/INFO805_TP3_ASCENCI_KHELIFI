@@ -1,10 +1,16 @@
-import {MeshPhongMaterial, TextureLoader} from "three";
+import {MeshBasicMaterial, MeshPhongMaterial, TextureLoader} from "three";
 
-function loadMaterial(url : string) : MeshPhongMaterial {
+function loadBasicMaterial(url : string) : MeshPhongMaterial {
+    const map = new TextureLoader().load(url);
+    return new MeshBasicMaterial({ map: map });
+}
+
+function loadPhongMaterial(url : string) : MeshPhongMaterial {
     const map = new TextureLoader().load(url);
     return new MeshPhongMaterial({ map: map });
 }
 
 export default {
-    loadMaterial
+    loadBasicMaterial,
+    loadPhongMaterial
 };

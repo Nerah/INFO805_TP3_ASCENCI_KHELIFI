@@ -1,12 +1,12 @@
 import React from 'react'
 import GlobeSystemeSolaire from "../GlobeSystemeSolaire";
-import {Color, MeshBasicMaterial} from "three";
+import utils from "../../utils";
 
 function PlaneteSoleil(props) {
     return (
         <GlobeSystemeSolaire
             {...props}
-            material={new MeshBasicMaterial({ color: new Color('yellow'), transparent: false })}
+            material={utils.files.loadBasicMaterial("/pictures/sun.jpg")}
             radius={1}
             precision={30}
         />
