@@ -1,6 +1,6 @@
 import React, {useRef} from 'react'
 import {useFrame} from 'react-three-fiber'
-import {BoxGeometry, MeshBasicMaterial, SphereGeometry, TextureLoader} from "three";
+import {MeshBasicMaterial, SphereGeometry, TextureLoader} from "three";
 
 function PlaneteTerre(props) {
     // This reference will give us direct access to the mesh
