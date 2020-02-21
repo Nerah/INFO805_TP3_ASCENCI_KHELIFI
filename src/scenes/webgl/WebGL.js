@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import {Canvas} from "react-three-fiber";
 import {
-    Box
+    WebGLBox
 } from "../../scene-components";
 
 class WebGL extends Component {
@@ -10,8 +10,8 @@ class WebGL extends Component {
             <Canvas>
                 <ambientLight />
                 <pointLight position={[10, 10, 10]} />
-                <Box position={[-1.2, 0, 0]}/>
-                <Box position={[1.2, 0, 0]}/>
+                <WebGLBox position={[-1.2, 0, 0]}/>
+                <WebGLBox position={[1.2, 0, 0]}/>
             </Canvas>
         );
     }

@@ -1,9 +1,11 @@
 import React from "react";
 import {
     Home,
+    Error404
+} from "../pages"
+import {
     Boxes,
     WebGL,
-    Error404
 } from "../scenes"
 
 const configuration = {
