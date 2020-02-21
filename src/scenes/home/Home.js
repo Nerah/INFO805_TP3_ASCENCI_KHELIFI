@@ -16,9 +16,6 @@ class Home extends Component {
             <div>
                 <nav>
                     <ul>
-                        <li>
-                            <Link to={configuration.pages.home.route}>{configuration.pages.home.titre}</Link>
-                        </li>
                         {listeScenes}
                     </ul>
                 </nav>
