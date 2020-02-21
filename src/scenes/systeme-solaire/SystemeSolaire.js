@@ -5,14 +5,16 @@ import {
 } from "../../scene-components";
 import PlaneteLune from "../../scene-components/Lune/PlaneteLune";
 import {Group} from "three";
+import PlaneteSoleil from "../../scene-components/PlaneteSoleil/PlaneteSoleil";
 
 class SystemeSolaire extends Component {
     render() {
         return (
             <Canvas style={{background: 'black'}}>
                 <pointLight specular={0xFFFFFF} position={[0, 0, 0]} />
-                <PlaneteTerre position={[-1.2, 0, -5]}/>
-                <PlaneteLune position={[-3, 0, -5]}/>
+                <PlaneteSoleil position={[0, 0, 0]}/>
+                <PlaneteTerre position={[-5, 2, -5]}/>
+                <PlaneteLune position={[-7, 2, -5]}/>
             </Canvas>
         );
     }
