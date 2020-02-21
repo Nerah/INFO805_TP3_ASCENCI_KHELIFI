@@ -7,11 +7,8 @@ import {
 class WebGL extends Component {
     render() {
         return (
-            <Canvas>
-                <ambientLight />
-                <pointLight position={[10, 10, 10]} />
+            <Canvas style={{background: 'black'}}>
                 <WebGLBox position={[-1.2, 0, 0]}/>
-                <WebGLBox position={[1.2, 0, 0]}/>
             </Canvas>
         );
     }
