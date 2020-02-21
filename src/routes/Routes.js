@@ -6,8 +6,8 @@ import {
 } from "react-router-dom";
 import configuration from "../config";
 
-const listeScenes = configuration.scenes.map((item) => (
-    <Route exact path={item.route}>
+const listeScenes = configuration.scenes.map((item, index) => (
+    <Route key={index} exact path={item.route}>
         {item.component}
     </Route>
 ));

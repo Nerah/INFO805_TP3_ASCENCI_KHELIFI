@@ -4,8 +4,8 @@ import configuration from "../../config";
 
 class Home extends Component {
     render() {
-        const listeScenes = configuration.scenes.map((item) => (
-            <li>
+        const listeScenes = configuration.scenes.map((item, index) => (
+            <li key={index}>
                 <Link to={item.route}>
                     {item.titre}
                 </Link>
