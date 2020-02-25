@@ -1,7 +1,7 @@
 import React from "react";
 import {
     PlaneteLune
-} from "../../../scene-components";
+} from "../../../../scene-components";
 
 function SystemeLunaire(props) {
     return (

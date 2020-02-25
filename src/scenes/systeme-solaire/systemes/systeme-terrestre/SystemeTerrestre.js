@@ -1,8 +1,8 @@
 import React, {useRef} from "react";
 import {
     PlaneteTerre
-} from "../../../scene-components";
-import SystemeLunaire from "../SystemeLunaire/SystemeLunaire";
+} from "../../../../scene-components";
+import SystemeLunaire from "./SystemeLunaire";
 import {useFrame} from "react-three-fiber";
 
 function SystemeTerrestre(props) {
