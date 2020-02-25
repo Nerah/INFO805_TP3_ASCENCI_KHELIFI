@@ -1,6 +1,6 @@
 import React from 'react'
-import GlobeSystemeSolaire from "../GlobeSystemeSolaire";
-import utils from "../../utils";
+import GlobeSystemeSolaire from "../abstract/GlobeSystemeSolaire";
+import utils from "../../../utils";
 
 function PlaneteTerre(props) {
     return (

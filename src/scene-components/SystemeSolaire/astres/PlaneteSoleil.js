@@ -1,6 +1,6 @@
 import React from 'react'
-import utils from "../../utils";
-import GlobeLumineuxSystemeSolaire from "../GlobeLumineuxSystemeSolaire";
+import utils from "../../../utils";
+import GlobeLumineuxSystemeSolaire from "../abstract/GlobeLumineuxSystemeSolaire";
 
 function PlaneteSoleil(props) {
     return (
