@@ -4,16 +4,13 @@ import SystemeTerrestre from "./SystemeTerrestre";
 import {Soleil} from "../../../scene-components";
 
 function SystemeSolaire(props) {
-    const fractime = 0.7;
-    const angle = fractime * Math.PI * 2;
-
     const sSolaire = useRef();
-    useFrame(() => sSolaire.current.rotation.y += angle / 365);
+    useFrame(() => sSolaire.current.rotation.y += props.angle / 365);
 
     return (
         <group ref={sSolaire} position={[0, 0, 0]}>
             <Soleil precision={30} specular={0xFFF} radius={1} rotation={props.angle} position={[0, 0, 0]}/>
-            <SystemeTerrestre position={[0, 0, -4]} angle={angle} />
+            <SystemeTerrestre position={[0, 0, -4]} angle={props.angle} />
         </group>
     );
 }
