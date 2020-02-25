@@ -1,7 +1,7 @@
 import React, {useRef} from "react";
 import {useFrame} from "react-three-fiber";
-import SystemeTerrestre from "./systemes/SystemeTerrestre";
-import {Soleil} from "../../scene-components";
+import SystemeTerrestre from "./SystemeTerrestre";
+import {Soleil} from "../../../scene-components";
 
 function SystemeSolaire(props) {
     const fractime = 0.7;
