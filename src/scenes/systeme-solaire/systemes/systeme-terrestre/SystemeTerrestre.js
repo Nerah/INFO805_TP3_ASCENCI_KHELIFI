@@ -1,8 +1,8 @@
 import React, {useRef} from "react";
 import {
+    PlaneteLune,
     PlaneteTerre
 } from "../../../../scene-components";
-import SystemeLunaire from "./SystemeLunaire";
 import {useFrame} from "react-three-fiber";
 
 function SystemeTerrestre(props) {
@@ -12,7 +12,7 @@ function SystemeTerrestre(props) {
     return (
         <group ref={sysTerre} position={props.position}>
             <PlaneteTerre angle={props.angle} position={[0, 0, 0]}/>
-            <SystemeLunaire angle={props.angle} position={[-0.5, 0, 0]}/>
+            <PlaneteLune angle={props.angle} position={[-0.5, 0, 0]}/>
         </group>
     );
 }
