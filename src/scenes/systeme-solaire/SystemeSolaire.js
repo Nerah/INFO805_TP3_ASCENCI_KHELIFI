@@ -4,7 +4,7 @@ import SystemeSoleil from "./SystemeSoleil/SystemeSoleil";
 import SystemeTerrestre from "./SystemeTerrestre/SystemeTerrestre";
 
 function SystemeSolaire(props) {
-    const fractime = 0.8;
+    const fractime = 0.7;
     const angle = fractime * Math.PI * 2;
 
     const sSolaire = useRef();
@@ -13,7 +13,7 @@ function SystemeSolaire(props) {
     return (
         <group ref={sSolaire} position={[0, 0, 0]}>
             <SystemeSoleil position={[0, 0, 0]} angle={angle} />
-            <SystemeTerrestre position={[0, 0, -3]} angle={angle} />
+            <SystemeTerrestre position={[0, 0, -4]} angle={angle} />
         </group>
     );
 }

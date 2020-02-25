@@ -7,7 +7,7 @@ function PlaneteTerre(props) {
         <GlobeSystemeSolaire
             {...props}
             material={utils.files.loadPhongMaterial("/pictures/earth_atmos_2048.jpg")}
-            radius={1}
+            radius={0.3}
             precision={15}
             rotation={props.angle}
         />

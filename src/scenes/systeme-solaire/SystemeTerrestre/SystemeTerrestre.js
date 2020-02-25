@@ -12,7 +12,7 @@ function SystemeTerrestre(props) {
     return (
         <group ref={sysTerre} position={props.position}>
             <PlaneteTerre angle={props.angle} position={[0, 0, 0]}/>
-            <SystemeLunaire angle={props.angle} position={[-2, 0, 0]}/>
+            <SystemeLunaire angle={props.angle} position={[-0.5, 0, 0]}/>
         </group>
     );
 }
