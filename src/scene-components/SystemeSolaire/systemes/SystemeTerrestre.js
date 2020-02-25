@@ -1,9 +1,7 @@
 import React from "react";
-import {
-    Lune,
-    Terre
-} from "../../../scene-components";
-import Systeme from "../../../scene-components/SystemeSolaire/abstract/Systeme";
+import Systeme from "../abstract/Systeme";
+import Terre from "../astres/Terre";
+import Lune from "../astres/Lune";
 
 function SystemeTerrestre(props) {
     const rotation = props.angle / 28;

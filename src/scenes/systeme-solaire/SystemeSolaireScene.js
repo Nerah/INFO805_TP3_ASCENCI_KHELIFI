@@ -1,6 +1,8 @@
 import React from "react";
 import {Canvas} from "react-three-fiber";
-import SystemeSolaire from "./systemes/SystemeSolaire";
+import {
+    SystemeSolaire
+} from "../../scene-components/ScenesComponents";
 
 function SystemeSolaireScene(props) {
     const fractime = 0.8;

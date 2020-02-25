@@ -1,7 +1,7 @@
 import React from "react";
 import SystemeTerrestre from "./SystemeTerrestre";
-import {Soleil} from "../../../scene-components";
-import Systeme from "../../../scene-components/SystemeSolaire/abstract/Systeme";
+import Systeme from "../abstract/Systeme";
+import Soleil from "../astres/Soleil";
 
 function SystemeSolaire(props) {
     const rotation = props.angle / 365;
