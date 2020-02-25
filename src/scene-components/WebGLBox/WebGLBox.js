@@ -1,6 +1,6 @@
 import React, {useRef} from 'react'
 import {useFrame} from 'react-three-fiber'
-import {BoxGeometry, MeshBasicMaterial, TextureLoader} from "three";
+import {BoxGeometry} from "three";
 import utils from "../../utils";
 
 function WebGLBox(props) {
