@@ -1,17 +1,20 @@
-import React from "react";
-import {Canvas} from "react-three-fiber";
+import React, {useRef} from "react";
+import {useFrame} from "react-three-fiber";
 import SystemeSoleil from "./SystemeSoleil/SystemeSoleil";
 import SystemeTerrestre from "./SystemeTerrestre/SystemeTerrestre";
 
-const fractime = 0.005;
-const angle = fractime * Math.PI * 2;
-
 function SystemeSolaire(props) {
+    const fractime = 0.8;
+    const angle = fractime * Math.PI * 2;
+
+    const sSolaire = useRef();
+    useFrame(() => sSolaire.current.rotation.y += angle / 365);
+
     return (
-        <Canvas style={{background: 'black'}}>
+        <group ref={sSolaire} position={[0, 0, 0]}>
             <SystemeSoleil position={[0, 0, 0]} angle={angle} />
-            <SystemeTerrestre position={[-5, 2, -5]} angle={angle} />
-        </Canvas>
+            <SystemeTerrestre position={[0, 0, -3]} angle={angle} />
+        </group>
     );
 }
 

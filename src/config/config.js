@@ -6,7 +6,7 @@ import {
 import {
     Boxes,
     WebGL,
-    SystemeSolaire
+    SystemeSolaireScene
 } from "../scenes"
 
 const configuration = {
@@ -24,7 +24,7 @@ const configuration = {
         {
             route: "/systeme-solaire",
             titre: "Système solaire",
-            component: <SystemeSolaire/>
+            component: <SystemeSolaireScene/>
         },
     ],
     pages: {
