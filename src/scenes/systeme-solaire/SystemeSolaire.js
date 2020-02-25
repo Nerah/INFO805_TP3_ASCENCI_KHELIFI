@@ -1,7 +1,7 @@
 import React, {useRef} from "react";
 import {useFrame} from "react-three-fiber";
-import SystemeSoleil from "./systemes/SystemeSoleil";
 import SystemeTerrestre from "./systemes/systeme-terrestre/SystemeTerrestre";
+import {PlaneteSoleil} from "../../scene-components";
 
 function SystemeSolaire(props) {
     const fractime = 0.7;
@@ -12,7 +12,7 @@ function SystemeSolaire(props) {
 
     return (
         <group ref={sSolaire} position={[0, 0, 0]}>
-            <SystemeSoleil position={[0, 0, 0]} angle={angle} />
+            <PlaneteSoleil angle={props.angle} position={[0, 0, 0]}/>
             <SystemeTerrestre position={[0, 0, -4]} angle={angle} />
         </group>
     );
