@@ -1,10 +1,10 @@
 import React from 'react'
-import GlobeSystemeSolaire from "../abstract/GlobeSystemeSolaire";
+import Astre from "../abstract/Astre";
 import utils from "../../../utils";
 
 function PlaneteLune(props) {
     return (
-        <GlobeSystemeSolaire
+        <Astre
             {...props}
             material={utils.files.loadPhongMaterial("/pictures/moon_1024.jpg")}
             radius={0.1}

@@ -2,7 +2,7 @@ import React, {useRef} from 'react'
 import {useFrame} from 'react-three-fiber'
 import {SphereGeometry} from "three";
 
-function GlobeSystemeSolaire(props) {
+function Astre(props) {
     // This reference will give us direct access to the mesh
     const mesh = useRef();
 
@@ -23,4 +23,4 @@ function GlobeSystemeSolaire(props) {
     )
 }
 
-export default GlobeSystemeSolaire;
+export default Astre;

@@ -1,10 +1,10 @@
 import React from 'react'
 import utils from "../../../utils";
-import GlobeLumineuxSystemeSolaire from "../abstract/GlobeLumineuxSystemeSolaire";
+import AstreLumineux from "../abstract/AstreLumineux";
 
 function PlaneteSoleil(props) {
     return (
-        <GlobeLumineuxSystemeSolaire
+        <AstreLumineux
             position={props.position}
             material={utils.files.loadBasicMaterial("/pictures/sun.jpg")}
             radius={1}

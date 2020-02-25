@@ -1,11 +1,11 @@
 import React from 'react'
-import GlobeSystemeSolaire from "./GlobeSystemeSolaire";
+import Astre from "./Astre";
 
-function GlobeLumineuxSystemeSolaire(props) {
+function AstreLumineux(props) {
     return (
         <group position={props.position}>
             <pointLight specular={props.specular} position={props.position} />
-            <GlobeSystemeSolaire
+            <Astre
                 position={props.position}
                 material={props.material}
                 radius={props.radius}
@@ -16,4 +16,4 @@ function GlobeLumineuxSystemeSolaire(props) {
     )
 }
 
-export default GlobeLumineuxSystemeSolaire;
+export default AstreLumineux;

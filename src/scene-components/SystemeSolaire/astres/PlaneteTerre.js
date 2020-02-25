@@ -1,10 +1,10 @@
 import React from 'react'
-import GlobeSystemeSolaire from "../abstract/GlobeSystemeSolaire";
+import Astre from "../abstract/Astre";
 import utils from "../../../utils";
 
 function PlaneteTerre(props) {
     return (
-        <GlobeSystemeSolaire
+        <Astre
             {...props}
             material={utils.files.loadPhongMaterial("/pictures/earth_atmos_2048.jpg")}
             radius={0.3}
