@@ -7,7 +7,7 @@ function Lune(props) {
         <Astre
             {...props}
             material={utils.files.loadPhongMaterial("/pictures/moon_1024.jpg")}
-            radius={0.1}
+            radius={props.radius}
             precision={10}
             rotation={props.angle / 27}
         />
