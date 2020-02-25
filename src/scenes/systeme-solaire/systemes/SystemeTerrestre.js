@@ -11,8 +11,8 @@ function SystemeTerrestre(props) {
 
     return (
         <group ref={sysTerre} position={props.position}>
-            <Terre precision={15} radius={0.3} angle={props.angle} position={[0, 0, 0]}/>
-            <Lune precision={10} radius={0.1} angle={props.angle} position={[-0.5, 0, 0]}/>
+            <Terre precision={15} radius={0.3} rotation={props.angle} position={[0, 0, 0]}/>
+            <Lune precision={10} radius={0.1} rotation={props.angle} position={[-0.5, 0, 0]}/>
         </group>
     );
 }

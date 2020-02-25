@@ -9,7 +9,7 @@ function Lune(props) {
             material={utils.files.loadPhongMaterial("/pictures/moon_1024.jpg")}
             radius={props.radius}
             precision={props.precision}
-            rotation={props.angle / 27}
+            rotation={props.rotation / 27}
         />
     )
 }
