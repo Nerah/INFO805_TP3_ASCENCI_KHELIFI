@@ -6,7 +6,7 @@ function Soleil(props) {
     return (
         <AstreLumineux
             position={props.position}
-            material={utils.files.loadBasicMaterial("/pictures/sun.jpg")}
+            material={utils.material.loadBasicMaterial("/pictures/sun.jpg")}
             radius={props.radius}
             precision={props.precision}
             rotation={props.rotation / 26}

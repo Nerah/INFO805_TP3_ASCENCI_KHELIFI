@@ -1,7 +1,7 @@
-import files from "./loadFiles";
+import files from "./loadMaterial";
 
 const utils = {
-    files: files
+    material: files
 };
 
 export default utils;

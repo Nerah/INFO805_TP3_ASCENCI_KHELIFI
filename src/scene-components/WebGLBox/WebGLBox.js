@@ -8,7 +8,7 @@ function WebGLBox(props) {
     const mesh = useRef();
 
     const mapUrl = "/pictures/webgl-logo-256.jpg";
-    let material = utils.files.loadBasicMaterial(mapUrl);
+    let material = utils.material.loadBasicMaterial(mapUrl);
     // Create the cube geometry
     let geometry = new BoxGeometry(2, 2, 2);
 
