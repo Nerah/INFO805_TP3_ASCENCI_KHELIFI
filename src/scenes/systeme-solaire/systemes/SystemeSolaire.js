@@ -12,7 +12,7 @@ function SystemeSolaire(props) {
 
     return (
         <group ref={sSolaire} position={[0, 0, 0]}>
-            <Soleil specular={0xFFF} radius={1} angle={props.angle} position={[0, 0, 0]}/>
+            <Soleil precision={30} specular={0xFFF} radius={1} angle={props.angle} position={[0, 0, 0]}/>
             <SystemeTerrestre position={[0, 0, -4]} angle={angle} />
         </group>
     );

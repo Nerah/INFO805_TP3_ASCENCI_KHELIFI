@@ -8,7 +8,7 @@ function Terre(props) {
             {...props}
             material={utils.files.loadPhongMaterial("/pictures/earth_atmos_2048.jpg")}
             radius={props.radius}
-            precision={15}
+            precision={props.precision}
             rotation={props.angle}
         />
     )

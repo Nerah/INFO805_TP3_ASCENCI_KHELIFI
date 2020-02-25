@@ -8,7 +8,7 @@ function Soleil(props) {
             position={props.position}
             material={utils.files.loadBasicMaterial("/pictures/sun.jpg")}
             radius={props.radius}
-            precision={30}
+            precision={props.precision}
             rotation={props.angle / 26}
             specular={props.specular}
         />
