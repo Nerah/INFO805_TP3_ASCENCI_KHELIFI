@@ -1,6 +1,6 @@
 import React, {useRef} from "react";
 import {useFrame} from "react-three-fiber";
-import SystemeTerrestre from "./systemes/systeme-terrestre/SystemeTerrestre";
+import SystemeTerrestre from "./systemes/SystemeTerrestre";
 import {PlaneteSoleil} from "../../scene-components";
 
 function SystemeSolaire(props) {

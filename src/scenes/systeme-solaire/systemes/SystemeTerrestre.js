@@ -2,7 +2,7 @@ import React, {useRef} from "react";
 import {
     PlaneteLune,
     PlaneteTerre
-} from "../../../../scene-components";
+} from "../../../scene-components";
 import {useFrame} from "react-three-fiber";
 
 function SystemeTerrestre(props) {
