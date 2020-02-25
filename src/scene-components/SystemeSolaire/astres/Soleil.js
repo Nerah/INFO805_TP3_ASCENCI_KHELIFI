@@ -10,7 +10,7 @@ function Soleil(props) {
             radius={props.radius}
             precision={30}
             rotation={props.angle / 26}
-            specular={0xFFF}
+            specular={props.specular}
         />
     )
 }
