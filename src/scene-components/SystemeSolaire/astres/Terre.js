@@ -2,7 +2,7 @@ import React from 'react'
 import Astre from "../abstract/Astre";
 import utils from "../../../utils";
 
-function PlaneteTerre(props) {
+function Terre(props) {
     return (
         <Astre
             {...props}
@@ -14,4 +14,4 @@ function PlaneteTerre(props) {
     )
 }
 
-export default PlaneteTerre;
+export default Terre;

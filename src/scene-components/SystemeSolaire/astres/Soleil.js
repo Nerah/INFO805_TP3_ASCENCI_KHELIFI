@@ -2,7 +2,7 @@ import React from 'react'
 import utils from "../../../utils";
 import AstreLumineux from "../abstract/AstreLumineux";
 
-function PlaneteSoleil(props) {
+function Soleil(props) {
     return (
         <AstreLumineux
             position={props.position}
@@ -15,4 +15,4 @@ function PlaneteSoleil(props) {
     )
 }
 
-export default PlaneteSoleil;
+export default Soleil;

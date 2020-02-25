@@ -1,13 +1,13 @@
 import Box from "./Box/Box";
 import WebGLBox from "./WebGLBox/WebGLBox";
-import PlaneteTerre from "./SystemeSolaire/astres/PlaneteTerre";
-import PlaneteLune from "./SystemeSolaire/astres/PlaneteLune";
-import PlaneteSoleil from "./SystemeSolaire/astres/PlaneteSoleil";
+import Terre from "./SystemeSolaire/astres/Terre";
+import Lune from "./SystemeSolaire/astres/Lune";
+import Soleil from "./SystemeSolaire/astres/Soleil";
 
 export {
     Box,
     WebGLBox,
-    PlaneteTerre,
-    PlaneteLune,
-    PlaneteSoleil
+    Terre,
+    Lune,
+    Soleil
 }
