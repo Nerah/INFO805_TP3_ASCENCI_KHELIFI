@@ -4,7 +4,7 @@ import GlobeSystemeSolaire from "./GlobeSystemeSolaire";
 function GlobeLumineuxSystemeSolaire(props) {
     return (
         <group position={props.position}>
-            <pointLight specular={props.specular} position={[0, 0, 0]} />
+            <pointLight specular={props.specular} position={props.position} />
             <GlobeSystemeSolaire
                 position={props.position}
                 material={props.material}
