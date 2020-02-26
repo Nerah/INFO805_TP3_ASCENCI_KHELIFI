@@ -10,7 +10,7 @@ function SystemeTerrestre(props) {
     return (
         <Systeme rotation={rotationTerreSoleil}>
             <Systeme position={props.position} rotation={rotationLune}>
-                <Terre precision={15} radius={0.3} rotation={props.angle} position={[0, 0, 0]}/>
+                <Terre precision={15} radius={0.3} rotation={props.angle}/>
                 <Lune precision={10} radius={0.1} rotation={props.angle} position={[-0.5, 0, 0]}/>
             </Systeme>
         </Systeme>

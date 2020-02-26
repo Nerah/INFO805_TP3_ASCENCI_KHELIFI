@@ -2,7 +2,7 @@ import React, {useRef} from 'react'
 import {useFrame} from 'react-three-fiber'
 import {SphereGeometry} from "three";
 
-function Astre(props) {
+function Astre({position = [0, 0, 0], ...props}) {
     // This reference will give us direct access to the mesh
     const mesh = useRef();
 
@@ -15,7 +15,7 @@ function Astre(props) {
 
     return (
         <mesh
-            position={props.position}
+            position={position}
             ref={mesh}
             geometry={geometry}
             material={material}
