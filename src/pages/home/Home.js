@@ -6,7 +6,7 @@ class Home extends Component {
     render() {
         const listeScenes = configuration.scenes.map((item, index) => (
             <li key={index}>
-                <Link to={item.route}>
+                <Link to={item.route} target="_blank">
                     {item.titre}
                 </Link>
             </li>
