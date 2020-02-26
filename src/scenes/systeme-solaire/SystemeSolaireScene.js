@@ -1,7 +1,7 @@
 import React from "react";
 import {
     SystemeSolaire
-} from "../../scene-components/ScenesComponents";
+} from "../../scene-components";
 import Scene from "../Scene";
 
 function SystemeSolaireScene() {
