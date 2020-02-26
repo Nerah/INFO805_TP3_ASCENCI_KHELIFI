@@ -4,7 +4,7 @@ import {
 } from "../../scene-components/ScenesComponents";
 import Scene from "../Scene";
 
-function SystemeSolaireScene(props) {
+function SystemeSolaireScene() {
     const fractime = 0.8;
     const angle = fractime * Math.PI * 2;
 
