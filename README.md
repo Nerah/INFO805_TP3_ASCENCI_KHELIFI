@@ -9,6 +9,7 @@ npm >= 5.6
 
 ```
 git clone https://github.com/Nerah/INFO805_TP3_ASCENCI_KHELIFI.git
+cd INFO805_TP3_ASCENCI_KHELIFI
 npm install
 npm start
 ```
