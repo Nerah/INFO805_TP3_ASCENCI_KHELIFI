@@ -2,7 +2,6 @@ import React, {Component} from "react";
 import {Canvas} from "react-three-fiber";
 import utils from "../utils";
 import {PerspectiveCamera} from "three";
-import {OrbitControls} from "three/examples/jsm/controls/OrbitControls";
 
 class Scene extends Component {
     constructor(props) {
