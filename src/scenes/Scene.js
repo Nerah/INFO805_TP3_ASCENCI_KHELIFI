@@ -6,7 +6,7 @@ import {OrbitControls} from "three/examples/jsm/controls/OrbitControls";
 
 extend({OrbitControls});
 
-function Controls(props) {
+function Controls() {
     const {
         camera,
         gl: {domElement}
