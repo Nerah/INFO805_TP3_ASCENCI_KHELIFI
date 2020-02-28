@@ -1,4 +1,5 @@
 {
+  "homepage" : "https://Nerah.github.io/INFO805_TP3_ASCENCI_KHELIFI",
   "name": "info805_tp3_ascenci_khelifi",
   "version": "0.1.0",
   "private": true,
@@ -14,6 +15,8 @@
     "three": "^0.113.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
