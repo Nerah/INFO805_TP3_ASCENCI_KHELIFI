@@ -11,7 +11,7 @@ function Controls() {
         camera,
         gl: {domElement}
     } = useThree();
-    return <orbitControls args={[camera, domElement]} />
+    return <orbitControls enableRotate={true} minDistance={5} maxDistance={50} args={[camera, domElement]} />
 }
 
 class Scene extends Component {
