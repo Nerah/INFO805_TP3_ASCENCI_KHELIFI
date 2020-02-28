@@ -1,7 +1,18 @@
 import React, {Component} from "react";
-import {Canvas} from "react-three-fiber";
+import {Canvas, extend, useThree} from "react-three-fiber";
 import utils from "../utils";
 import {PerspectiveCamera} from "three";
+import {OrbitControls} from "three/examples/jsm/controls/OrbitControls";
+
+extend({OrbitControls});
+
+function Controls(props) {
+    const {
+        camera,
+        gl: {domElement}
+    } = useThree();
+    return <orbitControls args={[camera, domElement]} />
+}
 
 class Scene extends Component {
     static defaultProps = {
@@ -30,6 +41,7 @@ class Scene extends Component {
     render() {
         return (
             <Canvas camera={this.state.camera} style={this.props.style}>
+                <Controls/>
                 {this.props.children}
             </Canvas>
         );
