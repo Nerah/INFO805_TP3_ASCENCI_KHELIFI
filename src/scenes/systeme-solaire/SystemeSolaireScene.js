@@ -9,7 +9,7 @@ function SystemeSolaireScene() {
     const angle = fractime * Math.PI * 2;
 
     return (
-        <Scene style={{background: 'black'}}>
+        <Scene camPos={[0, 0, 20]} style={{background: 'black'}}>
             <SystemeSolaire position={[0, 0, 0]} angle={angle}  />
         </Scene>
     );

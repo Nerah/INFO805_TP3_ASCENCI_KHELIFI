@@ -1,4 +1,4 @@
-import React, {useRef, useState} from 'react'
+import React, {useRef} from 'react'
 import {useFrame} from 'react-three-fiber'
 import {Camera, SphereGeometry, Vector3} from "three";
 
